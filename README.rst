@@ -14,13 +14,13 @@ All relevant classes and exceptions can be directly imported from the `couchpy` 
 
 That statement provides the following classes and exceptions in your namespace: `couchpy.broker.Database`, `couchpy.broker.Document`, and `couchpy.broker.Server`, as well as the the exceptions:
 
- * `couchpy.network.HTTPError`,
- * `couchpy.network.PreconditionFailed`,
- * `couchpy.network.RedirectLimitExceeded`,
- * `couchpy.network.ResourceConflict`,
- * `couchpy.network.ResourceNotFound`,
- * `couchpy.network.ServerError`, and
- * `couchpy.network.Unauthorized`.
+* `couchpy.network.HTTPError`
+* `couchpy.network.PreconditionFailed`
+* `couchpy.network.RedirectLimitExceeded`
+* `couchpy.network.ResourceConflict`
+* `couchpy.network.ResourceNotFound`
+* `couchpy.network.ServerError`
+* `couchpy.network.Unauthorized`
 
 All these errors treat connection, request and response problems as well as errors reported by CouchDB itself, and are all based on `http.client.HTTPException`.
 Also, string encoding problems are reported as `UnicodeError`, JSON encoding problems as `TypeError`, and bad method parameters as `ValueError`.
